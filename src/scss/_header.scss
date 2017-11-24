@@ -1,0 +1,121 @@
+
+.header {
+	position: relative;	
+	height: 760px;
+	width: 100%;
+	overflow: hidden;
+	z-index: 0;
+
+	.arrow-text-wrap {
+		position: absolute;
+		z-index: 500;
+		width: 400px;
+		text-align: center;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 6%;
+
+		@include breakHeight(640px, 730px) {
+			bottom: 17%;
+		}
+
+		@include breakHeight(0, 639px) {
+			bottom: 28%;
+		}
+
+	    @include break(1400px, 1749px) {
+			bottom: 3%;
+		}
+
+		@include break(1750px, 9000px) {
+			display: none;
+		}
+
+		h3 {
+			color: $white;
+			font-size: 1.4em;
+			font-weight: lighter;
+		}
+
+		.arrow-img {
+
+			position: relative;
+			animation-name: bounce;
+     		animation-duration: 4s;
+     		animation-iteration-count: infinite;
+
+     		@keyframes bounce {
+				0%   {top: 0px;}
+    			20%  {top: -15px;}
+    			40%  {top: 0px}
+    			60% {top: -15px;}
+    			80%  {top: 0px}
+    			100% {top: 0px;}
+			}
+		}
+	}
+
+	.header-bg-video {
+		position: absolute;
+    	top: 50%;
+    	left: 50%;
+    	transform: translateX(-50%) translateY(-50%);
+    	min-width: 100%;
+    	min-height: 100%;
+    	z-index: -100;
+    	background-size: cover;
+	}
+
+	.angle {
+		position: absolute;
+		width: 200%;
+		height: 50px;
+	 	background-color: $background;
+	 	transform: rotate(-1.5deg);
+	 	bottom: 0;
+	 	z-index: 500;
+	}
+	
+	.header-title-image {
+		position: relative;
+		z-index: 100;
+		padding-left: 8%;
+		padding-top: 15%;
+	
+		img {
+			width: 65%;
+
+		}
+	}
+	
+	.header-dots-image {
+
+		position: absolute;
+		bottom: 0;
+		z-index: 500;
+		height: 100%;
+		
+
+		img {
+			position: relative;
+			bottom: -10%;
+		}
+	}	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

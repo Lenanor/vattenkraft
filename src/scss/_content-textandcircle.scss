@@ -1,0 +1,196 @@
+
+.cpt-circles {
+
+    margin: 0;
+
+	@include break(768px, 1019px) {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin: 10% 0;
+	}
+
+	.text-circle-group-wrap:nth-of-type(3) {
+
+		background-color: $pink;
+
+		.orange {
+
+			@include break(768px, 1019px) {
+
+				h3 {
+					text-align: center;
+				} 	
+			}
+		}
+
+		@include break(0, 349px) {
+			height: 400px;
+		}
+
+		@include break(0, 500px) {
+			height: 290px;
+		}
+
+		@include break(500px, 1019px) {
+			width: 100%;
+			height: 250px;
+		}
+
+		@include break(1020px, 1199px) {
+			width: 460px;
+			height: 460px;
+			border-radius: 100%;
+			position: relative;
+			z-index: 500;
+			left: 70px;
+			top: -90px;
+		}
+		
+		@include break(1200px, 9000px) {
+			width: 460px;
+			height: 460px;
+			border-radius: 100%;
+			position: relative;
+			z-index: 500;
+			left: 70px;
+			top: -290px;
+		}
+	}
+
+	.text-circle-group-wrap {
+
+		@include break(0, 349px) {
+			height: 450px;
+		}
+
+		@include break(350px, 767px) {
+			height: 350px;
+		}
+
+		@include break(768px, 1019px) {
+			width: 50%;
+			height: 500px;
+		}
+
+		.blue {
+			background-color: $blue;
+
+			@include break(0, 350px) {
+				height: 450px;
+			}
+
+			@include break(350px, 767px) {
+				height: 350px;
+			}
+				
+			@include break(768px, 1019px) {
+
+				height: 500px;
+
+				h3 {
+					padding-top: 12%;
+				}	
+			}
+	
+			@include break(1020px, 9000px) {
+			width: 620px;
+			height: 620px;
+			border-radius: 100%;
+			position: relative;
+			left: -5%;
+			top: 70;
+			}
+		}
+	
+		.green {
+
+			background-color: $green_circle;
+
+			@include break(0, 350px) {
+				height: 450px;
+			}
+
+			@include break(350px, 767px) {
+				height: 400px;
+			}	
+	
+			@include break(768px, 1019px) {
+
+				height: 500px;
+
+				h3 {
+					padding-top: 12%;
+				}	
+			}
+
+			@include break(1020px, 1250px) {
+				position: relative;
+				left: 45%;
+				border-radius: 100%;
+				width: 536px;
+				height: 536px;
+			}
+	
+			@include break(1251px, 9000px) {
+				position: relative;
+				left: 55%;
+				border-radius: 100%;
+				width: 536px;
+				height: 536px;
+			}
+		}
+
+		.text-heading-wrap {
+			width: 370px;
+			height: 240px;
+	
+			@include break(0px, 1019px) {
+				margin: 0 auto 0 auto;
+				width: 90%;
+				padding-top: 8%;
+			}
+	
+			@include break(1020px, 9000px) {
+				position: absolute;
+				top: 20%;
+				left: 50%;
+				transform: translateX(-48%);
+			}
+	
+			h3 {
+				@include break(0px, 1019px) {
+					font-size: 1.5em;
+				}
+
+				font-size: 2.1em;
+				font-size: $headings;
+				letter-spacing: 1.25px;
+				margin: 0;
+			}
+	
+			p {
+				margin: 0;
+
+				@include break(0, 299px) {
+					font-size: .75em;
+				}
+
+				@include break(300px, 499px) {
+					font-size: .8em;
+				}
+
+				@include break(500px, 1019px) {
+					font-size: .9em;
+				}
+				font-size: 0.95em;
+				font-family: $text;
+				font-weight: 200;
+				letter-spacing: 1px;
+				line-height: 1.6em;
+				
+			}
+		}
+	}
+}

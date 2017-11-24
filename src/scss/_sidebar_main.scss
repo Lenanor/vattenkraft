@@ -1,0 +1,42 @@
+
+.main-sidebar {
+	#sidebar {
+		ul {
+			display: flex;
+			justify-content: space-between;
+    		padding: 0;
+    		width: 80%;
+    		margin: 8% auto;
+    		flex-wrap: wrap;
+    		font-size: 1.3em;
+
+    		@include break(731px, 921px) {
+    			width: 90%;
+    		}
+
+    		@include break(0, 730px) {
+    			font-size: .9em;
+    		}
+
+
+
+  			.widget {
+  				
+    			padding: 40px;
+    			margin: 0 auto;
+    			width: 320px;
+
+    			@include break(531px, 1060px) {
+    				font-size: 0.8em;
+    				padding: 10px;
+    				width: 30%;
+    			}
+
+    			@include break(0, 530px) {
+    				width: 100%;
+    				padding: 0; 		
+    			}
+    		}
+		}
+	}
+}

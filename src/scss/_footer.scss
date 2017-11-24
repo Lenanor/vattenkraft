@@ -1,0 +1,53 @@
+footer {
+	height: auto;
+	width: 100%;
+	color: $white;
+	background-color: $blue_text;
+
+	.footer-wrap {
+		padding-top: 3%;
+		margin: 0 auto;
+		width: 800px;
+
+		@include break(0, 1180px) {
+		width: 80%;
+		}
+
+		h3 {
+			text-align: center;
+			font-family: $headings;
+			font-size: 1.4em;
+			font-weight: lighter;
+			letter-spacing: 1px;
+		}
+		.logos {
+			list-style-type: none;
+			padding: 0;
+			margin: 8% auto 5% auto;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			width: 90%;
+
+			li {
+				width: 210px;
+				height: 90px;
+				img {
+					width: 210px;
+					height: 210px;
+				}
+			}
+		}	
+		p {
+			text-align: center;
+			font-family: $text;
+			font-size: 0.8em;
+			font-weight: lighter;
+			margin: 0;
+			padding: 5%;
+
+		}
+	}
+
+}

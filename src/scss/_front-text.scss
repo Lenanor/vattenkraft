@@ -1,0 +1,52 @@
+.front-page-text {
+	width: 40%;
+	margin: 2% 43% 0 10%; 
+
+	@include break(560px, 900px) {
+		width: 65%;
+		margin-top: 20%;
+	}
+
+	@include break(0, 559px) {
+		width: 90%;
+		margin: 20% auto;
+	}
+}
+
+.blue-wrap {
+	
+	position: relative;
+	z-index: 800;
+	// top: -40px;
+
+
+	.blue-logo {
+	
+		margin-left: 2.8%;
+		margin-top: 1%;
+		position: relative;
+	
+		@include break(650px, 928px){
+			width: 20%;
+		}
+	
+		@include break(0, 649px){
+			display: none;
+		}
+	}
+	
+	
+	.blue-bubbles { 
+
+		max-width: 100%;
+		position: absolute;
+		right: 50%;
+		z-index: -100;
+
+		@include break(0, 650px){
+			display: none;
+		}
+	
+	}
+
+}

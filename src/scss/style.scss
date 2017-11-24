@@ -1,0 +1,61 @@
+@import "normalize";
+@import "variables";
+@import "mixin";
+@import "header";
+@import "footer";
+@import "content-textandpic";
+@import "content-textandcircle";
+@import "posts";
+@import "front-text";
+@import "sidebar_main.scss";
+@import "nav";
+@import "bubbles";
+
+
+// * {
+// 	border: 1px teal dotted;
+// }
+
+
+html {
+	height: 100%;
+}
+
+body {
+	background-color: $background;
+	color: $blue_text;
+	font-family: $text; 
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+
+h4 {
+	font-family: $headings;		
+	font-size: .7em;
+}
+
+h2 {
+	font-family: $headings;
+	font-weight: 100;
+	font-size: 3.7em;
+	line-height: 1;
+	letter-spacing: 0.2;
+	margin: 0 0 5% 0;
+	@include break(415px, 560px) {
+		font-size: 2.7em;
+	}
+	@include break(0, 414px) {
+		font-size: 1.7em;
+	}	
+}
+
+h3 {
+	font-family: $headings;	
+}
+
+
+

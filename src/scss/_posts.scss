@@ -1,0 +1,14 @@
+.posts {
+	width: 40%;
+	margin: 20% 15% 10% 43%;
+
+	@include break(560px, 900px) {
+		width: 65%;
+		margin: 15% 15% 10% 30%;
+	}
+
+	@include break(0, 559px) {
+		width: 90%;
+		margin: 15% auto;
+	}
+}

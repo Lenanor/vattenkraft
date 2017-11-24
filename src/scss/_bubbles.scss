@@ -1,0 +1,85 @@
+
+.bubbles-section-wrap {
+
+	position: absolute;
+	width: 100%;
+ 	height: auto;
+ 	overflow: hidden;
+ 	top: 1500px;
+ 	z-index: -300;
+
+
+	.bubble-wrap-1 {
+	
+		.bubbles-11 {
+			position: relative;
+			left: 10%;
+			
+		}
+	
+		.bubbles-12 {	
+			position: relative;
+			left: 50%;
+			top: -500px;
+			
+		}
+	}
+
+	.bubble-wrap-2 {
+	
+		.bubbles-21 {
+			position: relative;
+			right: 20%;
+			top: -900px;
+
+		}
+	
+		.bubbles-22 {	
+			position: relative;
+			left: 33%;
+			top: -1400px;
+		}
+	}
+	
+	
+	.bubble-wrap-3 {
+			
+		.bubbles-31 {
+			position: relative;
+			left: 45%;
+			top: 100px;
+		}
+	
+		.bubbles-32 {	
+			position: relative;
+			left: 60%;
+			top: -300px;
+		}
+	}
+	
+	
+	.bubble-wrap-4 {
+
+		@include break(0, 1495px){
+			display: none;
+		}
+	
+		.bubbles-41 {
+			position: relative;
+			top: 150px;
+		}
+	
+		.bubbles-42 {	
+			position: relative;	
+			top: -100px;
+		}
+	}
+
+ }
+
+
+
+
+
+
+	

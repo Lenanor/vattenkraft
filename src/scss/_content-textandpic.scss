@@ -1,0 +1,142 @@
+.cpt-left-right {
+	width: 94%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+
+
+
+
+	.text-picture-group-wrap {
+
+		margin: 5% 0;
+
+		@include break(0, 920px) {
+			// top: 140px;
+			// margin-top: 100px;		
+		}
+
+		.pic {
+			position: relative;
+			
+			img {
+				@include break(0, 750px) {
+					width: 98%;
+				}
+			}
+		} 
+	
+		.text {
+			position: relative;
+			left: 490px;
+			margin-top: -76px;
+			width: 640px;
+	
+			@include break(768px, 1199px) {
+				left: 250px;	
+			}
+
+			@include break(0, 767px) {
+				width: 95%;
+			}
+	
+			@include break(0, 989px) {
+				left: 0;
+				margin-top: 0;
+
+				h2 {
+					padding-top: 20px;
+
+					@include break(0, 650px) {
+						font-size: 2.5em;
+					}
+				}
+			}
+	
+
+			p:nth-of-type(2) {
+				font-size: 1.2em;
+				letter-spacing: 1.0;
+				margin-top: 40px;
+			}
+	
+			.orange{
+				color: $orangepink_heading;
+			}
+			.green{
+				color: $green_heading;
+			}
+			.blue{
+				color: $blue_heading;
+			}
+		}
+	}
+
+
+
+
+	.right {
+		position: relative;
+    	// top: 140;
+		
+		@include break(1630px, 9999px) {
+		margin-left: 55%;
+		}
+
+		@include break(1250px, 1629px) {
+			margin-left: 40%;
+		}
+
+		@include break(1050px, 1249px) {
+			margin-left: 30%;
+		}
+
+		.pic {
+			position: relative;
+    		
+    		@include break(0, 990px) {
+    		// top: -140;
+    		}
+		}
+
+
+		.text {
+
+			position: relative;
+			left: -447px;
+			margin-top: -137px;
+			width: 640px;
+			// top: -140px;
+
+			@include break(1050px, 1249px) {
+				left: -40%;
+				margin-top: -135px;
+			}
+
+			@include break(990px, 1049px) {
+				left: 30%;
+				margin-top: -135px;
+			}
+
+			@include break(0, 989px) {
+				left: 0;
+				top: 140px;
+				margin-bottom: 140px;
+			}
+
+			@include break(0, 767px) {
+				width: 95%;
+			}
+
+			h2 {
+				
+			}
+
+			p:nth-of-type(2) {
+				font-size: 1.2em;
+				letter-spacing: 1.0;
+				margin-top: 40px;
+			}	
+		}
+	}
+}
